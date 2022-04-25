@@ -86,6 +86,9 @@ WSGI_APPLICATION = 'FragileArt.wsgi.application'
 
 SITE_ID = 1
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
