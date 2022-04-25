@@ -27,10 +27,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 {% endblock %}
 
-<title>Title</title>
+<title>FragileArt</title>
 </head>
 <body>
+<header>
+    <div class="container-fluid fixed-top">
 
+    </div>
+</header>
+
+
+{% if messages %}
+<div class="messages">
+
+</div>
+{% endif %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
 
 </body>
 </html>
