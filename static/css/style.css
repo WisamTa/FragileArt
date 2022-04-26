@@ -1,3 +1,36 @@
+html, body {
+    height: 100%;
+    background-color: #000;
+}
+
 .intro-div {
+    min-height: 100vh;
+    background-image: url('/media/client-splash.jpg');
+    opacity: 0.6;
     
+}
+
+.intro-div:hover
+ {  
+    animation: 
+    splash 90s  none,
+    bright 1s forwards;    
+}
+
+@keyframes splash {
+    from{
+        background-position-x: left;
+    }
+    to{
+        background-position-x: right;  
+    }
+}
+
+@keyframes bright {
+    from{
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
 }
