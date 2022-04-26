@@ -1,0 +1,541 @@
+[{
+    "pk": 1,
+    "model": "store.product",
+    "fields": {
+        "name": "Little Leeches",
+        "description": "Single artwork ",
+        "price": 9.99,
+        "category": 1,
+        "image": "beetle-1.jpg",
+        "client": "Sunburned Bliss",
+        "tools": "illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    }
+},
+{
+    "pk": 2,
+    "model": "store.product",
+    "fields": {
+        "name": "Overgrown Eden",
+        "description": "Sublimation T-shirt design for InMe reimagining their debut album, Overgrown Eden, later used for the 15th Anniversary vinyl",
+        "price": 9.99,
+        "category": 1,
+        "image": "overgrown-eden.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 3,
+    "model": "store.product",
+    "fields": {
+        "name": "Living A Life Without The F",
+        "description": "Artwork and layout design for Dave McPherson’s ‘Living A Life Without The F’",
+        "price": 9.99,
+        "category": 1,
+        "image": "living-life.jpg",
+        "client": "Dave McPherson",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 4,
+    "model": "store.product",
+    "fields": {
+        "name": "Trilogy: Dawn",
+        "description": "Artwork and layout design for part one of InMe’s Trilogy, ‘Dawn’",
+        "price": 9.99,
+        "category": 1,
+        "image": "trilogy-dawn.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 5,
+    "model": "store.product",
+    "fields": {
+        "name": "Journey Of A Journey Bouy",
+        "description": "Artwork and layout design for Dave McPherson’s 3rd album, Journal of a Journey Buoy",
+        "price": 9.99,
+        "category": 1,
+        "image": "journey-bouy.jpg",
+        "client": "Dave McPherson",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 6,
+    "model": "store.product",
+    "fields": {
+        "name": "Defender",
+        "description": "Artwork and layout design for Acoda.",
+        "price": 0.00,
+        "category": 1,
+        "image": "defender.jpg",
+        "client": "Acoda",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": false,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 7,
+    "model": "store.product",
+    "fields": {
+        "name": "Dreamoirs",
+        "description": "Artwork and layout design for Dave McPherson’s 2nd album, Dreamoirs.",
+        "price": 9.99,
+        "category": 1,
+        "image": "dreamoirs.jpg",
+        "client": "Dave McPherson",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 8,
+    "model": "store.product",
+    "fields": {
+        "name": "Lady Luck",
+        "description": "Music video for track, Lady Luck, which shows the entire design process for the Dreamoirs album artwork as a timelapse video",
+        "price": 9.99,
+        "category": 1,
+        "image": "lady-luck.jpg",
+        "client": "Dave McPherson",
+        "tools": "Photoshop, Illustrator, After Effects",
+        "is_sold": false,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 9,
+    "model": "store.product",
+    "fields": {
+        "name": "The Hardship Diaries",
+        "description": "Artwork for Dave McPherson’s debut album, The Hardship Diaries.",
+        "price": 9.99,
+        "category": 1,
+        "image": "hardship.jpg",
+        "client": "Dave McPherson",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 10,
+    "model": "store.product",
+    "fields": {
+        "name": "Pantheon",
+        "description": "T-shirt design and single artwork for InMe’s Pantheon",
+        "price": 9.99,
+        "category": 1,
+        "image": "pantheon.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 11,
+    "model": "store.product",
+    "fields": {
+        "name": "The Pride",
+        "description": "Artwork and partial layout for InMe’s fifth album, The Pride.",
+        "price": 9.99,
+        "category": 1,
+        "image": "pride.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 12,
+    "model": "store.product",
+    "fields": {
+        "name": "Beetle Pin",
+        "description": "Pin design of the beetle logo.",
+        "price": 9.99,
+        "category": 5,
+        "image": "beetle-pin.jpg",
+        "client": "Personal",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "Pin"
+    } 
+},
+{
+    "pk": 13,
+    "model": "store.product",
+    "fields": {
+        "name": "Bedford Custom Cables",
+        "description": "Worked on creating packaging and branding for Bedford Custom Cables.",
+        "price": 0.00,
+        "category": 2,
+        "image": "bedford.jpg",
+        "client": "Bedford Audio",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": false,
+        "sale_type": "logo"
+    } 
+},
+{
+    "pk": 14,
+    "model": "store.product",
+    "fields": {
+        "name": "Moth",
+        "description": "Moth logo for 'The City Limits'",
+        "price": 0.00,
+        "category": 3,
+        "image": "moth.jpg",
+        "client": "The City Limits",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": false,
+        "sale_type": "logo"
+    } 
+},
+{
+    "pk": 15,
+    "model": "store.product",
+    "fields": {
+        "name": "Festivile",
+        "description": "Branding, laminate, poster and flyer design for Sheffield’s Annual Heavy Music Festival, FestiVILE",
+        "price": 0.00,
+        "category": 3,
+        "image": "festivile.jpg",
+        "client": "Festivile (Sheffield Corporation)",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": false,
+        "sale_type": "logo"
+    } 
+},
+{
+    "pk": 15,
+    "model": "store.product",
+    "fields": {
+        "name": "Festivile",
+        "description": "Branding, laminate, poster and flyer design for Sheffield’s Annual Heavy Music Festival, FestiVILE",
+        "price": 0.00,
+        "category": 3,
+        "image": "festivile.jpg",
+        "client": "Festivile (Sheffield Corporation)",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": false,
+        "sale_type": "logo"
+    } 
+},
+{
+    "pk": 16,
+    "model": "store.product",
+    "fields": {
+        "name": "Beetle Series",
+        "description": "Series of Beetle illustrations.",
+        "price": 8.99,
+        "category": 4,
+        "image": "beetle.jpg",
+        "client": "Festivile (Sheffield Corporation)",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 17,
+    "model": "store.product",
+    "fields": {
+        "name": "Royal Beggers",
+        "description": "Royal Beggers illustration.",
+        "price": 8.99,
+        "category": 4,
+        "image": "royal-beggers.jpg",
+        "client": "Personal",
+        "tools": "Photoshop, Illustrator",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 18,
+    "model": "store.product",
+    "fields": {
+        "name": "Gaming Weaponry",
+        "description": "Series of Gaming Weaponry drawings in sticker form.",
+        "price": 8.99,
+        "category": 4,
+        "image": "weaponry.jpg",
+        "client": "Personal",
+        "tools": "Photoshop, Illustrator",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 19,
+    "model": "store.product",
+    "fields": {
+        "name": "Winter Stag",
+        "description": "Winter stag stocking for the 18th day of Sheffield Says Christmas Countdown.",
+        "price": 8.99,
+        "category": 4,
+        "image": "weaponry.jpg",
+        "client": "Personal/Sheffield Says",
+        "tools": "Photoshop, Illustrator",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 19,
+    "model": "store.product",
+    "fields": {
+        "name": "Red 74",
+        "description": "Part of an open collaboration with Hydro74.",
+        "price": 8.99,
+        "category": 4,
+        "image": "red-74.jpg",
+        "client": "Personal",
+        "tools": "Pen, Illustrator",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 20,
+    "model": "store.product",
+    "fields": {
+        "name": "Red 74",
+        "description": "Part of an open collaboration with Hydro74.",
+        "price": 8.99,
+        "category": 4,
+        "image": "red-74.jpg",
+        "client": "Personal",
+        "tools": "Pen, Illustrator",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 21,
+    "model": "store.product",
+    "fields": {
+        "name": "Fragile Script",
+        "description": "Typography and promotion stop motion videos for social media.",
+        "price": 8.99,
+        "category": 4,
+        "image": "fragile-script.jpg",
+        "client": "Personal",
+        "tools": "Pen, Illustrator",
+        "is_sold": true,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 22,
+    "model": "store.product",
+    "fields": {
+        "name": "Burning Bridge",
+        "description": "Animation of my 365 piece Inflammable Bridge.",
+        "price": 8.99,
+        "category": 4,
+        "image": "burning-bridge.jpg",
+        "client": "Personal",
+        "tools": "Photoshop, Illustrator, After Effects",
+        "is_sold": false,
+        "sale_type": "card"
+    } 
+},
+{
+    "pk": 23,
+    "model": "store.product",
+    "fields": {
+        "name": "Beetle Deck",
+        "description": "Beetle skate deck design",
+        "price": 23.99,
+        "category": 4,
+        "image": "beetle-deck.jpg",
+        "client": "Personal",
+        "tools": "Pen, Photoshop",
+        "is_sold": true,
+        "sale_type": "board"
+    } 
+},
+{
+    "pk": 24,
+    "model": "store.product",
+    "fields": {
+        "name": "Beetle Deck",
+        "description": "Beetle skate deck design",
+        "price": 23.99,
+        "category": 5,
+        "image": "beetle-deck.jpg",
+        "client": "Personal",
+        "tools": "Pen, Photoshop",
+        "is_sold": true,
+        "sale_type": "board"
+    } 
+},
+{
+    "pk": 25,
+    "model": "store.product",
+    "fields": {
+        "name": "Herald Moth Tee",
+        "description": "T-shirt design for InMe reimagining of their fourth album, Herald Moth.",
+        "price": 23.99,
+        "category": 6,
+        "image": "herald-moth.jpg",
+        "client": "Personal",
+        "tools": "Pen, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 26,
+    "model": "store.product",
+    "fields": {
+        "name": "Geometric Stag",
+        "description": "T-shirt design for Luna Kiss.",
+        "price": 23.99,
+        "category": 6,
+        "image": "geometric-stag.jpg",
+        "client": "Luna Kiss",
+        "tools": "Pen, Ink, Illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 27,
+    "model": "store.product",
+    "fields": {
+        "name": "Daydream Anonymous",
+        "description": "T-shirt design for InMe reimagining of their third album, Daydream Anonymous.",
+        "price": 23.99,
+        "category": 6,
+        "image": "daydream-anonymous.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 28,
+    "model": "store.product",
+    "fields": {
+        "name": "InMe 20th Anniversary",
+        "description": "T-shirt design for InMe combining all 7 albums for their 20th Anniversary.",
+        "price": 23.99,
+        "category": 6,
+        "image": "inme-anniversary.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 29,
+    "model": "store.product",
+    "fields": {
+        "name": "Overgrown Eden Song",
+        "description": "Tee design based on the song titles from InMe’s Overgrown Eden.",
+        "price": 23.99,
+        "category": 6,
+        "image": "overgrown-song.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 30,
+    "model": "store.product",
+    "fields": {
+        "name": "Phoenix",
+        "description": "T-shirt and poster design for InMe to coincide with their greatest hits album, Phoenix.",
+        "price": 23.99,
+        "category": 6,
+        "image": "phoenix.jpg",
+        "client": "InMe",
+        "tools": "Pen, Ink, Illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 31,
+    "model": "store.product",
+    "fields": {
+        "name": "Drowning Sinking",
+        "description": "First eight colour design created for Devil Sold His Soul.\nBased on a selection of lyrics taken from the track Drowning / Sinking off of their album, Blessed & Cursed.",
+        "price": 23.99,
+        "category": 6,
+        "image": "drowning.jpg",
+        "client": "Devil Sold His Soul",
+        "tools": "Pen, Ink, Illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 32,
+    "model": "store.product",
+    "fields": {
+        "name": "Take Over Crest",
+        "description": "Tee design for Take Over Clothing.",
+        "price": 23.99,
+        "category": 6,
+        "image": "takeover.jpg",
+        "client": "Take Over Clothing",
+        "tools": "Pen, Ink, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 33,
+    "model": "store.product",
+    "fields": {
+        "name": "Take Over Crest",
+        "description": "Tee design for Take Over Clothing.",
+        "price": 23.99,
+        "category": 6,
+        "image": "takeover.jpg",
+        "client": "Devil Sold His Soul",
+        "tools": "Pen, Ink, Illustrator, Photoshop",
+        "is_sold": true,
+        "sale_type": "T-Shirt"
+    } 
+},
+{
+    "pk": 34,
+    "model": "store.product",
+    "fields": {
+        "name": "Bedford Audio Website Concepts",
+        "description": "Various layout and design concepts for the Bedford Audio Website over the years.",
+        "price": 0.00,
+        "category": 8,
+        "image": "takeover.jpg",
+        "client": "Devil Sold His Soul",
+        "tools": "Illustrator, Photoshop",
+        "is_sold": false,
+        "sale_type": "concept"
+    } 
+}
+]
