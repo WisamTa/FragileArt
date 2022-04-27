@@ -2,11 +2,12 @@
 {% load static %}
 
 {% block page_header %}
+{% include 'includes/logo.html' %}
 {% include 'includes/nav.html' %}
 {% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'basket/css/basket.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}" type="text/css">
 {% endblock %}
 
 {% block content %}
@@ -18,8 +19,80 @@
     </div>
     <div class="row">
         <div class="col-12">
-           
+            <p>Please complete the form to checkout</p>
+        </div>
+        <div class="col-12">
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <p>Customer Details:</p>
+                {{ order_form.first_name | as_crispy_field }}
+                {{ order_form.last_name | as_crispy_field }}
+                {{ order_form.email | as_crispy_field }}
+                {{ order_form.telephone_number | as_crispy_field }}
+                <p>Delivery Details:</p>
+                {{ order_form.street_address1 | as_crispy_field }}
+                {{ order_form.street_address2 | as_crispy_field }}
+                {{ order_form.city_town | as_crispy_field }}
+                {{ order_form.county_state | as_crispy_field }}
+                {{ order_form.postcode_zip | as_crispy_field }}
+                {{ order_form.country | as_crispy_field }}
+
+                <div class="form-check form-check-inline float-right mr-0">
+                    {% if user.is_authenticated %}
+                    <label class="form-check-label" for="id-save-info">Save this delivery information to my
+                        profile</label>
+                    <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info"
+                        checked>
+                    {% else %}
+                    <label class="form-check-label" for="id-save-info">
+                        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
+                        <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                    </label>
+                    {% endif %}
+                </div>
+
+                <div class="col-12">
+                    <p>Payment Information</p>
+                </div>
+
+                <!-- Stripe Payment System -->
+
+                <div class="col-12">
+                    <!--Stripe element -->
+                    <div id="card-element">
+
+                    </div>
+                </div>
+                    <!--Stripe Errors-->
+                <div class="col-12">
+                    <div id="card-errors"></div>
+                </div>
+
+
+                <p class="small">Your card will be charged <strong
+                        class="text-danger">£{{ grand_total|floatformat:2 }}</strong></p>
+                <a href="{% url 'basket' %}" class="btn">
+                    <span class="icon">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                    <span class="">Keep Shopping</span>
+                </a>
+                <button id="submit-button" class="btn checkout-btn">
+                    <span class="">Complete Your Order</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </button>
+
+            </form>
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}

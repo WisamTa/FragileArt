@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+{% include 'includes/logo.html' %}
 {% include 'includes/nav.html' %}
 {% endblock %}
 
@@ -79,7 +80,7 @@
                                     </span>
                                     <span class="">Keep Shopping</span>
                                 </a>
-                                <a href="" class="btn">
+                                <a href="{% url 'checkout' %}" class="btn">
                                     <span class="">Checkout Now</span>
                                     <span class="icon">
                                         <i class="fas fa-lock"></i>

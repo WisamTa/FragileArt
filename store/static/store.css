@@ -1,5 +1,7 @@
 .card {
     border: 0;
+    padding-bottom: 3rem;
+    border-radius: .5rem;
 
 }
 
@@ -11,6 +13,15 @@
     padding: 0.5rem;
 }
 
+.card-info {
+    padding: 0;
+}
+
 .store-format {
     text-align: center;
+}
+
+.store-price {
+    font-size: 3rem;
+    font-weight: 600;
 }
