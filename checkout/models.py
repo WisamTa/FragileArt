@@ -4,7 +4,6 @@ from django.conf import settings
 
 from store.models import Product
 
-from django_countries.fields import CountryField
 import uuid
 
 # Create your models here.
@@ -18,11 +17,9 @@ class Order(models.Model):
     email = models.EmailField(max_length=256, null=False, blank=False)
     telephone_number = models.CharField(max_length=20, null=False, blank=False)
     street_address1 = models.CharField(max_length=128, null=False, blank=False)
-    street_address2 = models.CharField(max_length=128, null=True, blank=True)
-    city_town = models.CharField(max_length=128, null=False, blank=False)
+    street_address2 = models.CharField(max_length=128, null=False, blank=False)
     county_state = models.CharField(max_length=64, null=True, blank=True)
     postcode_zip = models.CharField(max_length=12, null=False, blank=False)
-    country = CountryField(blank_label='Country*', null=False, blank=False)
     order_date = models.DateTimeField(auto_now_add=True)
     total_order = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     delivery_charge = models.DecimalField(max_digits=5, decimal_places=2, null=False, default=0)
@@ -40,15 +37,15 @@ class Order(models.Model):
         If the order number has not been set, override the original save method to set the order number
         """
         if not self.order_number:
-            self.order_number = self._order_number_generation()
+            self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
     
     def total_update(self):
         """
         Updates the grand total as a new line is added and accounts for delivery cost to suit
         """
-        self.total_order = self.lineitems.aggregate(Sum('line_total'))['line_total__sum'] or 0
-        self.delivery_charge = self.total_order * settings.DELIVERY_PERCENTAGE / 100
+        self.total_order = self.lineitems.aggregate(Sum('line_total'))['line_total__sum']
+        self.delivery_charge = self.order_total * settings.DELIVERY_PERCENTAGE / 100
         self.grand_total = self.total_order + self.delivery_charge
         self.save()
 
