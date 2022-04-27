@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "")
+DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'fragile-art.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -42,10 +42,12 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     'home',
-     'portfolio',
+    'portfolio',
     'store',
     'clients',
     'contact',
+    'basket',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -156,7 +158,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

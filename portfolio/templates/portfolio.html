@@ -9,7 +9,9 @@
 
 <div class="container-fluid portfolio">
     <div class="row">
+        {% for item in portfolio %}
         {% include 'portfolio/portfolio-card.html' %}
+        {% endfor %}
     </div>
 </div>
 
