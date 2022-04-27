@@ -6,7 +6,7 @@
         "description": "Single artwork ",
         "price": 9.99,
         "category": 1,
-        "image": "beetle-1.jpg",
+        "image": "little-leeches.jpg",
         "client": "Sunburned Bliss",
         "tools": "illustrator, Photoshop",
         "is_sold": true,
@@ -49,13 +49,13 @@
     "fields": {
         "name": "Trilogy: Dawn",
         "description": "Artwork and layout design for part one of InMe’s Trilogy, ‘Dawn’",
-        "price": 9.99,
+        "price": 29.99,
         "category": 1,
         "image": "trilogy-dawn.jpg",
         "client": "InMe",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "T-Shirt"
     } 
 },
 {
@@ -64,13 +64,13 @@
     "fields": {
         "name": "Journey Of A Journey Bouy",
         "description": "Artwork and layout design for Dave McPherson’s 3rd album, Journal of a Journey Buoy",
-        "price": 9.99,
+        "price": 23.99,
         "category": 1,
         "image": "journey-bouy.jpg",
         "client": "Dave McPherson",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "T-shirt"
     } 
 },
 {
@@ -124,13 +124,13 @@
     "fields": {
         "name": "The Hardship Diaries",
         "description": "Artwork for Dave McPherson’s debut album, The Hardship Diaries.",
-        "price": 9.99,
+        "price": 24.99,
         "category": 1,
         "image": "hardship.jpg",
         "client": "Dave McPherson",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "T-shirt"
     } 
 },
 {
@@ -139,13 +139,13 @@
     "fields": {
         "name": "Pantheon",
         "description": "T-shirt design and single artwork for InMe’s Pantheon",
-        "price": 9.99,
+        "price": 19.99,
         "category": 1,
         "image": "pantheon.jpg",
         "client": "InMe",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "T-shirt"
     } 
 },
 {
@@ -169,7 +169,7 @@
     "fields": {
         "name": "Beetle Pin",
         "description": "Pin design of the beetle logo.",
-        "price": 9.99,
+        "price": 6.99,
         "category": 5,
         "image": "beetle-pin.jpg",
         "client": "Personal",
@@ -186,7 +186,7 @@
         "description": "Worked on creating packaging and branding for Bedford Custom Cables.",
         "price": 0.00,
         "category": 2,
-        "image": "bedford.jpg",
+        "image": "bedford.png",
         "client": "Bedford Audio",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": false,
@@ -216,22 +216,7 @@
         "description": "Branding, laminate, poster and flyer design for Sheffield’s Annual Heavy Music Festival, FestiVILE",
         "price": 0.00,
         "category": 3,
-        "image": "festivile.jpg",
-        "client": "Festivile (Sheffield Corporation)",
-        "tools": "Pen, Ink, Photoshop",
-        "is_sold": false,
-        "sale_type": "logo"
-    } 
-},
-{
-    "pk": 15,
-    "model": "store.product",
-    "fields": {
-        "name": "Festivile",
-        "description": "Branding, laminate, poster and flyer design for Sheffield’s Annual Heavy Music Festival, FestiVILE",
-        "price": 0.00,
-        "category": 3,
-        "image": "festivile.jpg",
+        "image": "festivile.png",
         "client": "Festivile (Sheffield Corporation)",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": false,
@@ -247,7 +232,7 @@
         "price": 8.99,
         "category": 4,
         "image": "beetle.jpg",
-        "client": "Festivile (Sheffield Corporation)",
+        "client": "Personal",
         "tools": "Pen, Ink, Photoshop",
         "is_sold": true,
         "sale_type": "card"
@@ -291,7 +276,7 @@
         "description": "Winter stag stocking for the 18th day of Sheffield Says Christmas Countdown.",
         "price": 8.99,
         "category": 4,
-        "image": "weaponry.jpg",
+        "image": "winter-stag.png",
         "client": "Personal/Sheffield Says",
         "tools": "Photoshop, Illustrator",
         "is_sold": true,
@@ -300,21 +285,6 @@
 },
 {
     "pk": 19,
-    "model": "store.product",
-    "fields": {
-        "name": "Red 74",
-        "description": "Part of an open collaboration with Hydro74.",
-        "price": 8.99,
-        "category": 4,
-        "image": "red-74.jpg",
-        "client": "Personal",
-        "tools": "Pen, Illustrator",
-        "is_sold": true,
-        "sale_type": "card"
-    } 
-},
-{
-    "pk": 20,
     "model": "store.product",
     "fields": {
         "name": "Red 74",
@@ -366,21 +336,6 @@
         "description": "Beetle skate deck design",
         "price": 23.99,
         "category": 4,
-        "image": "beetle-deck.jpg",
-        "client": "Personal",
-        "tools": "Pen, Photoshop",
-        "is_sold": true,
-        "sale_type": "board"
-    } 
-},
-{
-    "pk": 24,
-    "model": "store.product",
-    "fields": {
-        "name": "Beetle Deck",
-        "description": "Beetle skate deck design",
-        "price": 23.99,
-        "category": 5,
         "image": "beetle-deck.jpg",
         "client": "Personal",
         "tools": "Pen, Photoshop",
@@ -506,36 +461,6 @@
         "tools": "Pen, Ink, Photoshop",
         "is_sold": true,
         "sale_type": "T-Shirt"
-    } 
-},
-{
-    "pk": 33,
-    "model": "store.product",
-    "fields": {
-        "name": "Take Over Crest",
-        "description": "Tee design for Take Over Clothing.",
-        "price": 23.99,
-        "category": 6,
-        "image": "takeover.jpg",
-        "client": "Devil Sold His Soul",
-        "tools": "Pen, Ink, Illustrator, Photoshop",
-        "is_sold": true,
-        "sale_type": "T-Shirt"
-    } 
-},
-{
-    "pk": 34,
-    "model": "store.product",
-    "fields": {
-        "name": "Bedford Audio Website Concepts",
-        "description": "Various layout and design concepts for the Bedford Audio Website over the years.",
-        "price": 0.00,
-        "category": 8,
-        "image": "takeover.jpg",
-        "client": "Devil Sold His Soul",
-        "tools": "Illustrator, Photoshop",
-        "is_sold": false,
-        "sale_type": "concept"
     } 
 }
 ]

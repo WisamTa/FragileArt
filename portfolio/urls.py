@@ -6,5 +6,6 @@ from . import views
 
 urlpatterns = [
     path('', views.portfolio, name='portfolio'),
+    path('<product_id>', views.portfolio_detail, name='portfolio_detail'),
 
 ]

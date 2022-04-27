@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+{% include 'includes/nav.html' %}
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 centered">
+            <h1 class="centering"> Four Owwwww Four!</h1>
+
+            <a href="{% url 'store' %}" aria-label="view {{ product.name }}">Let's get out of here</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

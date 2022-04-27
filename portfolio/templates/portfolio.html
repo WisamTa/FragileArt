@@ -1,15 +1,13 @@
-
 {% extends 'base.html' %}
 {% load static %}
 
 {% block page_header %}
-{% include 'includes/logo.html' %}
 {% include 'includes/nav.html' %}
 {% endblock %}
 
 {% block content %}
 
-<div class="container-fluid portfolio">
+<div class="container portfolio">
     <div class="row">
         {% for item in portfolio %}
         {% include 'portfolio/portfolio-card.html' %}

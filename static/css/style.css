@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,700&display=swap');
+
+/* General Rules */
 
 html,
 body {
     height: 100%;
     background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a:link {
@@ -14,9 +17,21 @@ a:link {
     background-color: #323e48;
 }
 
+
+.page-header {
+    margin: 3rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+/* Nav Bar */
+
 .nav-layout {
-    margin-left: auto;
-    padding-right: 2rem; 
+    margin-left: 44%;
+    padding-right: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -37,16 +52,8 @@ a:link {
     padding: 2rem;
 }
 
-.portfolio-card:hover .overlay {
-    opacity: 1;
-}
-
-.portfolio {
-    padding: 1rem;
-}
-
-.card-size {
-    height: 4rem
+.collapse-format {
+    text-align: right;
 }
 
 .basket-icon {
@@ -64,7 +71,65 @@ a:link {
 }
 
 .logo {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto 0 auto;
     max-height: 5rem;
 }
+
+.information-format {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container-format {
+    margin-top: 3rem;
+}
+
+.link-style {
+    text-decoration: none;
+    color: #D9D9D9
+}
+
+.cart-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Contact Rules */
+
+.social-icons {
+    text-decoration: none;
+    color: #323e48;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.social-icons:hover {
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    padding: 0 2rem;
+    transition: ease-in-out 2s;
+}
+
+/*portfolio Rules */
+
+.portfolio-text {
+    text-align: center;
+    padding-top: 6rem;
+    color: #323e48;
+}
+
+
+.portfolio-card:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio {
+    padding: 1rem;
+}
+
+.card-size {
+    height: 4rem
+}
+
+/* Form Fields */

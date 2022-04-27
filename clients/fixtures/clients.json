@@ -1,0 +1,81 @@
+[{
+    "pk": "1",
+    "model": "clients.client",
+    "fields": {
+      "name": "bedford_audio",
+      "friendly_name": "Bedford Custom Audio",
+      "business_type": "Custom Audio Solutions",
+      "description": "Bespoke guitar set up, repairs & custom cable solutions. Working with both Professional and private clients based in Sheffield, UK",
+      "image": "bedford.png"
+    }
+  }, {
+    "pk": "2",
+    "model": "clients.client",
+    "fields": {
+      "name": "arkaik_clothing",
+      "friendly_name": "ArkAik Clothing",
+      "business_type": "Clothing Brand",
+      "description": "Indie Lifestyle and Music Inspired Brand. Founded in 2006. Leave Your Legacy.",
+      "image": "arkaik.png"
+    }
+  }, {
+    "pk": "3",
+    "model": "clients.client",
+    "fields": {
+      "name": "collate",
+      "friendly_name": "Collate London.",
+      "business_type": "PR",
+      "description": "Brand engagement, PR, & communications firm based in London, UK",
+      "image": "collate.png"
+    }
+  }, {
+    "pk": "4",
+    "model": "clients.client",
+    "fields": {
+      "name": "festivile",
+      "friendly_name": "Festivile",
+      "business_type": "Music Festival",
+      "description": "All day festival hosted annually in Sheffield Corporation, UK",
+      "image": "festivile.png"
+    }
+  }, {
+    "pk": "5",
+    "model": "clients.client",
+    "fields": {
+      "name": "inme",
+      "friendly_name": "InMe",
+      "business_type": "Band",
+      "description": "InMe are an English rock band from Brentwood, Essex, formed in 1996. Inme has released six studio albums, two EPs, one 'bootleg' album, one best-of compilation, one live album, one live EP and an acoustic album",
+      "image": "inme.png"
+    }
+  }, {
+    "pk": "6",
+    "model": "clients.client",
+    "fields": {
+      "name": "acoda",
+      "friendly_name": "Acoda",
+      "business_type": "Band",
+      "description": "ACODA are a Four-piece alternative metal band from Corby, Northamptonshire, United Kingdom. Formed in 2008, the band consists of vocalist/guitarist Damon Tang, bassist/vocalist Stephen Crook, guitarist/vocalist Jake Crawford and drummer/vocalist Jay Russell. The band are known for their energetic and emotive live showsand blending the musical influences of rock, metal, punk rock, progressive metal and post-hardcore.",
+      "image": "acoda.png"
+    }
+  }, {
+    "pk": "7",
+    "model": "clients.client",
+    "fields": {
+      "name": "devil_sold",
+      "friendly_name": "Devil Sold His Soul",
+      "business_type": "Band",
+      "description": "Devil Sold His Soul are an ambient influenced metalcore band from London, formed in 2004 and signed to Basick Records. Three members of the band used to be in Mahumodo. They released their debut studio album A Fragile Hope on 18 June 2007, after the release of their debut EP Darkness Prevails",
+      "image": "devil-sold.png"
+    }
+  }, {
+    "pk": "8",
+    "model": "clients.client",
+    "fields": {
+      "name": "fei_comodo",
+      "friendly_name": "Fei Comodo",
+      "business_type": "Band",
+      "description": "Fei Comodo were a 5-piece post-hardcore band from Essex, United Kingdom. They were signed to Small Town Records and developed a strong fanbase since their formation through playing many live shows across the country. They released five EPs, two singles, and one studio mini album. Renowned for an energetic live show the band completed several UK tours with other hardcore and metalcore bands from the South East, such as InMe and Bury Tomorrow.",
+      "image": "fei-comodo.png"
+    }
+  }]

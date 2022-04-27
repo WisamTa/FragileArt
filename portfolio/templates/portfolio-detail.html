@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+{% include 'includes/nav.html' %}
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-sm-4 col-md-6">
+            <img class="img-fluid" src="/media/{{ product.image }}" alt="">
+        </div>
+        <div class="col-sm-8 col-md-6">
+            <h1>{{ product.name }}</h1>
+            <p>{{ product.description }}</p>
+            <p>{{ product.client }}</p>
+            <p>{{ product.tools }}</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+{% endblock %}

@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block page_header %}
-{% include 'includes/logo.html' %}
 {% include 'includes/nav.html' %}
 {% endblock %}
 
@@ -14,7 +13,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
-            <h1>Checkout</h1>
+            <h1 class="page-header">Checkout</h1>
         </div>
     </div>
     <div class="row">
@@ -37,19 +36,6 @@
                 {{ order_form.postcode_zip | as_crispy_field }}
                 {{ order_form.country | as_crispy_field }}
 
-                <div class="form-check form-check-inline float-right mr-0">
-                    {% if user.is_authenticated %}
-                    <label class="form-check-label" for="id-save-info">Save this delivery information to my
-                        profile</label>
-                    <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info"
-                        checked>
-                    {% else %}
-                    <label class="form-check-label" for="id-save-info">
-                        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
-                        <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
-                    </label>
-                    {% endif %}
-                </div>
 
                 <div class="col-12">
                     <p>Payment Information</p>

@@ -1,6 +1,9 @@
 <div class="col-sm-4 col-md-3 portfolio-card">
-    <img src="/media/contact-splash.png" class="portfolio img-fluid" alt="portfolio">
-    <div class="overlay">
-        <div class="text">Details Simple</div>
-    </div>
+    <a href="{% url 'portfolio_detail' item.id %}" aria-label="view {{ item.name }}">
+        <img src="/media/{{ item.image }}" class="portfolio img-fluid" alt="portfolio">
+        <div class="overlay">
+            <h5 class="portfolio-text">{{ item.name }}</h5>
+        </div>
+    </a>
+    <div class="d-sm-block d-md block d-lg-none"><p class="centered">{{item.name}}</p></div>
 </div>

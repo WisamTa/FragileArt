@@ -36,7 +36,7 @@ card.addEventListener('change', function (event) {
 
 // Form submission
 
-var form = document.getElementById('payment-form');
+let form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function (ev) {
     ev.preventDefault();

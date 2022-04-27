@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Product
 
-# Create your views here.
 
 def store(request):
     """A View to display all saleable items"""
@@ -14,7 +13,7 @@ def store(request):
 
     return render(request, 'store/store.html', context)
 
-    
+
 def item_detail(request, product_id):
     """A View to display and individual product detail"""
 
