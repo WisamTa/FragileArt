@@ -1,3 +1,15 @@
+#### Admin
+
+- As a user i want to be able to add products easily.
+- As a user i want to be able to manage orders in a simple and easy manner.
+- As a user i want to be able to upload to my portfolio easily.
+
+#### Developer
+
+- As a user i want to ensure the user can't break the flow of the site with correct defensive design choices.
+- As a user i want to ensure an authenticated user can access all required information correctly.
+- As a user i want to include options for the admin to quickly edit the site.
+
 ### Wireframes
 - [Splash Desktop](https://github.com/WisamTa/FragileArt/blob/main/wireframes/fa-desktop-splash.png)
 - [Portfolio Desktop](https://github.com/WisamTa/FragileArt/blob/main/wireframes/fa-desktop-portfolio.png)
