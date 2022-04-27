@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages', #Needed for Allauth, do not remove!
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django_countries',
     
     'allauth',
     'allauth.account',
