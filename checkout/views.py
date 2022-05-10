@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 import stripe
 import sweetify
 
-from basket.contexts import basket_contents
 from store.models import Product
 from .forms import OrderForm
 from users.forms import UserProfile
@@ -103,3 +102,4 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
