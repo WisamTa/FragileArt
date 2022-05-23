@@ -1,6 +1,6 @@
 <div class="card">
     <a href="{% url 'item_detail' product.id %}" aria-label="view {{ product.name }}">
-        <img class="card-img-top" src="/media/{{ product.image }}" alt="Store Item">
+        <img class="card-img-top" src="{{ product.image.url }}" alt="Store Item">
     </a>
     <div class="card-body">
         <h5 class="card-title store-format">{{ product.name }}</h5>
