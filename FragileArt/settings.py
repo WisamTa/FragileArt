@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'basket',
     'checkout',
     'users',
-    
+    'storages',
 
     # additionals
 
