@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Client(models.Model):
     name = models.CharField(max_length=128)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -11,4 +12,3 @@ class Client(models.Model):
 
     def __str__(self):
         return self.name
-

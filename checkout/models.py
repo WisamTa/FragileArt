@@ -9,6 +9,7 @@ from users.models import UserProfile
 from django_countries.fields import CountryField
 import uuid
 
+
 class Order(models.Model):
 
     order_number = models.CharField(max_length=32, null=False, editable=False)
