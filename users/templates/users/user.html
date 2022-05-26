@@ -49,7 +49,7 @@
                 {% for item in order.lineitems.all %}
 
                 <div class="col-6">
-                    <img class="order-image" src="/media/{{ item.product.image }}">
+                    <img class="order-image" src="{{ item.product.image.url }}">
                 </div>
                 <div class="col-6">
                     <p class="order-item">{{item.quantity}} x {{ item.product.name }} £{{ item.product.price }}</p>

@@ -147,7 +147,7 @@ SOCIALACCOUNT_PROVIDERS = {
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(onjfglnshdpcpt:2b79a9fd2f4f5d852769942a06cc11ee494003f8a26554b9c361141b01069ff6@ec2-54-77-40-202.eu-west-1.compute.amazonaws.com:5432/da936gig7q9ot0)
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -157,6 +157,7 @@ else:
         }
     }
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

@@ -10,15 +10,16 @@ from checkout.models import Order
 def user(request):
     """A View to display a users profile"""
     
-    user = get_object_or_404(UserProfile, user=request.user)
-    form = ProfileForm(instance=user)
-    orders = user.orders.all()
+    # user = get_object_or_404(UserProfile, user=request.user)
+    # form = ProfileForm(instance=user)
+    # orders = user.orders.all()
 
     template = 'users/user.html'
-    context = {
-        'form': form,
-        'orders': orders,
-    }
+    # context = {
+    #     'form': form,
+    #     'orders': orders,
+    # }
+    context = {}
 
     return render(request, template, context)
 
