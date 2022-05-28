@@ -92,6 +92,15 @@ user by both components
 | Description   | description     | None            | TextField  |
 | image         | image           | None            | ImageField |
 
+####  Order line itme
+
+| Title            | Key In Database | Form Validation | Data Type   |
+|------------------|-----------------|-----------------|-----------  |
+| order            | ForeignKey      | Order           | Primary Key |
+| product          | ForeignKey      | Product         | Primary Key |
+| quantity         | IntegerField    | null False 0    | DecimalField|
+| line_total       | DecimalField    | max_digits 6    | DecimalField|
+
 ## Technology Used
 
 ### Languages
@@ -205,3 +214,72 @@ Each page loaded and displayed correctly, an issue was found with the basket whi
 
 - <strong>Verdict</strong> ✅:
 This test was classed as a fail and upon rereading the code a redesign of the basket was required to ensure mobile users were presented with the correct information that could be easily read.
+
+Design Choices
+Fonts
+The artist has request that the site use Playfair Display as they feel this best suits their work and style they want to achieve.
+
+As a secondary font i have chosen to use Montserrat to compliment this and allow for the extra content to stand out from the rest of the site content.
+
+Colours
+The client has specified #323e48 as their desired choice but has said they would allow anything to go with this as long as it contrasted well with the main colour choice.
+
+With this information i have chosen to use the following colours to provide a great contrast and to help the content stand out.
+- [](https://github.com/WisamTa/FragileArt/blob/main/media/colours.png)
+
+## Features
+
+### Exisiting Features
+
+#### Portfolio
+
+The portfolio section provides the artist a platform to add his works to the site and gives the user the chance to view all his current and past works in one place, each item has a description and a look at who the client for project was.
+
+If the item is also available for sale then the user can also add this to their shopping cart.
+
+#### Clients
+
+The clients section of the site allows the user and potential new clients to see an overview of previous clients and in what field they operate also pointing the user to get in touch with the artist with regards to their own potential projects
+
+#### Store
+
+The store will provide the user the oppertunity to purchase any available products directly from the web page and this was previously handled through a third party site.
+
+The user is able to add multiple items to the cart and either securely checkout in their current session or the items can be held until the user returns to the site later.
+
+Payment is handle on the site and keeps the user in the same loop without having to redirect to a third party site.
+
+#### Contact
+
+The contact page allows the user a variety of methods to contact the artist in relation to either new potential clients or with regards to queries related to existing orders, potential orders or stock queries.
+
+
+### Deploying to Heroku
+
+the login command for heroku has changed. When the instructor logs in to heroku from the terminal, please use the following command:
+
+heroku login -i
+
+This will no longer open up the login page in the browser, instead it will prompt you for your username and password in the terminal itself.
+
+NOTE: In case you have Multi-Factor Authentication (MFA/2FA) enabled, you'll need a few extra steps:
+
+Click on Account Settings (via the avatar menu) on the Heroku Dashboard.
+Scroll down to the API Key section and click Reveal. Copy the key.
+Use the login command: heroku login -i
+Enter your Heroku username.
+Enter the API key you just copied when prompted for your password.
+```
+
+1. in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
+1. in the Config Vars in Heroku you will need to populate with the following keys
+
+|          Key          |     Value    |
+|:---------------------:|:------------:|
+| AWS_ACCESS_KEY_ID     | [your value] |
+| AWS_SECRET_ACCESS_KEY | [your value] |
+| SECRET_KEY            | [your value] |
+| STRIPE_PUBLIC_KEY     | [your value] |
+| STRIPE_SECRET_KEY     | [your value] |
+| USE_AWS               | TRUE         |
+| DATABASE_URL          | [Your Value] |
