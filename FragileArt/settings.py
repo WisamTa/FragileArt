@@ -26,8 +26,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1',
-                 'fragileart.herokuapp.com', 'fragileart.rwells.dev']
+ALLOWED_HOSTS = ['fragileart.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -111,7 +110,7 @@ AUTHENTICATION_BACKENDS = [
     
 ]
 
-WSGI_APPLICATION = 'fragileartfragileart.wsgi.application'
+WSGI_APPLICATION = 'FragileArt.wsgi.application'
 
 
 SITE_ID = 1
@@ -212,7 +211,7 @@ if 'USE_AWS' in os.environ:
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
+    STATICFILES_LOCATION = 'staticfiles'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
