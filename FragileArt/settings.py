@@ -110,7 +110,7 @@ AUTHENTICATION_BACKENDS = [
     
 ]
 
-WSGI_APPLICATION = 'FragileArt.wsgi.application'
+WSGI_APPLICATION = 'fragileartfragileart.wsgi.application'
 
 
 SITE_ID = 1
