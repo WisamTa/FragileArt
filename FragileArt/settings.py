@@ -26,7 +26,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['fragileart.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'fragileart.herokuapp.com', 'fragileart.rwells.dev']
+
 
 
 # Application definition
