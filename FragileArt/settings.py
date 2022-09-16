@@ -12,6 +12,7 @@ from os import path
 if path.exists("env.py"):
     import env
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -196,6 +197,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 if 'USE_AWS' in os.environ:
 
     AWS_S3_OBJECT_PARAMETERS = {
@@ -215,10 +224,7 @@ if 'USE_AWS' in os.environ:
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-    STATIC_ROOT = os.path.join(STATIC_URL, 'staticfiles')
-    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
     
     
