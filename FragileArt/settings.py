@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from os import path
+import dj_database_url
+
+
 if path.exists("env.py"):
     import env
 
