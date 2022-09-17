@@ -111,6 +111,7 @@ a:link {
     transition: ease-in-out 2s;
 }
 
+
 /*portfolio Rules */
 
 .portfolio-text {
@@ -131,69 +132,6 @@ a:link {
 .card-size {
     height: 4rem
 }
-
-/* Form Fields */
- /* basket.css */
-
- .basket-image {
-    max-height: 5rem;
-}
-
-.empty-title {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-/* checkout.css */
-
-.checkout-btn {
-    color: khaki;
-  }
-  
-  /* Stripe */
-  
-  input,
-  .StripeElement {
-  height: 40px;
-  
-  color: #32325d;
-  background-color: white;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  
-  box-shadow: 0 1px 3px 0 #e6ebf1;
-  -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
-  }
-  
-  input {
-  padding: 10px 12px;
-  }
-  
-  input:focus,
-  .StripeElement--focus {
-  box-shadow: 0 1px 3px 0 #cfd7df;
-  }
-  
-  .StripeElement--invalid {
-  border-color: #fa755a;
-  }
-  
-  .StripeElement--webkit-autofill {
-  background-color: #fefde5 !important;
-  }
-
-  /* contact.css */
-
-  .form-position {
-    text-align: -webkit-center;
-}
-
-.form-size {
-    width: 50%;
-}
-
-/* home.css */
 
 html, body {
     height: 100%;
@@ -285,75 +223,4 @@ a:link {
     to {
         opacity: 1;
     }
-}
-
-/* store.css */
-
-.store-layout {
-    margin-top: 2rem;
-}
-
-.card {
-    border: 0;
-    padding-bottom: 3rem;
-    border-radius: .5rem;
-
-}
-
-.list-group-flush>.list-group-item{
-    border-width: 0;
-}
-
-.card-body {
-    padding: 0.5rem;
-}
-
-.card-info {
-    padding: 0;
-}
-
-.store-format {
-    text-align: center;
-}
-
-.store-price {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.cat-format {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.badge-color {
-    color: #ffffff;
-    background-color: #313e48;
-    font-size: 2rem;
-}
-
-/* users.css */
-
-.order-image {
-    height: 10rem;
-    width: 10rem;
-    padding-top: .5rem;
-}
-.order-item {
-    padding: .5rem;
-}
-
-.order-number {
-    font-size: 1rem
-}
-
-.title-format {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.order-table {
-    border: #313e48 solid 1px;
-    border-radius: .5rem;
 }
