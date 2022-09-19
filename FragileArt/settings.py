@@ -31,7 +31,8 @@ SECRET_KEY = 'your key'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['', 'localhost']
+ALLOWED_HOSTS = ['','localhost']
+
 
 
 # Application definition

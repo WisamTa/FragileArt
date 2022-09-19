@@ -1,0 +1,23 @@
+.form-position {
+    text-align: -webkit-center;
+}
+
+.form-size {
+    width: 50%;
+}
+
+.social-icons {
+    text-decoration: none;
+    color: #323e48;
+    font-size: 3rem;
+    padding: 1rem;
+    
+}
+
+.social-icons:hover {
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    padding: 0 2rem;
+    transition: ease-in-out 2s;
+}
