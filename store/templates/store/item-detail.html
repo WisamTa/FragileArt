@@ -30,9 +30,9 @@
 
                     <div class="col-12">
                         <p class="mt-3"><strong>Audio</strong></p>
-                        <audio src="https://macaulaylibrary.org/asset/203987191/embed" controls></audio>
-                        
-                        <p class="mt-3"><strong>Quantity</strong></p>
+                        <audio controls src="{{ product.audio.url }}"></audio>  
+                    
+                    <p class="mt-3"><strong>Quantity</strong></p>
                         <div class="form-group w-50">
                             <div class="input-group">
                                 <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
