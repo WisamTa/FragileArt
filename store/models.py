@@ -23,6 +23,9 @@ class Product(models.Model):
     is_sold = models.BooleanField(default=True)
     sale_type = models.CharField(max_length=20)
     image = models.ImageField(null=True, blank=True)
+    audio = models.DecimalField(null=True, blank=True, max_digits=6, decimal_places=2)
+
+    
 
     def __str__(self):
         return self.name
