@@ -6,6 +6,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    audio = models.DecimalField(null=True, blank=True, max_digits=6, decimal_places=2)
 
     def __str__(self):
         return self.name
