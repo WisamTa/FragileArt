@@ -2,6 +2,11 @@
     margin-top: 2rem;
 }
 
+.card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
 .card {
     border: 0;
     padding-bottom: 3rem;
