@@ -20,19 +20,19 @@ html, body {
 }
 
 .intro-portfolio {
-    background-image: url('/media/portfolio-splash.png'); 
+    background-image: url('/media/My-project1.jpg'); 
 }
 
 .intro-shop {
-    background-image: url('/media/shop-splash.png');
+    background-image: url('/media/My project (3).jpg');
 }
 
 .intro-clients {
-    background-image: url('/media/client-splash.jpg');
+    background-image: url('/media/My project (4).jpg');
 }
 
 .intro-contact {
-    background-image: url('/media/contact-splash.png');
+    background-image: url('/media/My project (5).jpg');
 }
 
 .title {
@@ -68,7 +68,7 @@ a:link {
 .intro-contact:hover
 {  
     animation: 
-    splash 70s  none,
+    splash 40s  none,
     bright 1s forwards;    
 }
 
@@ -76,7 +76,7 @@ a:link {
     from{
         background-position-x: left;
     }
-    to{
+    to {
         background-position-x: right;  
     }
 }
