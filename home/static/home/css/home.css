@@ -20,7 +20,7 @@ html, body {
 }
 
 .intro-portfolio {
-    background-image: url('/media/My-project1.jpg'); 
+    background-image: url('/media/My_project_16.jpg'); 
 }
 
 .intro-shop {
@@ -29,6 +29,10 @@ html, body {
 
 .intro-clients {
     background-image: url('/media/My project (4).jpg');
+}
+
+.intro-contact {
+    background-image: url('/media/My project (5).jpg');
 }
 
 .intro-contact {

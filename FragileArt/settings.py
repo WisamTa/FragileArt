@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'checkout',
     'users',
     'storages',
+    'about',
 
     # additionals
 
