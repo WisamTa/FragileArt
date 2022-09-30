@@ -152,3 +152,48 @@ a:link {
     background: black;
     color: white !important;
 }
+
+
+element.style {
+}
+
+.page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.bg-faded {
+    background-color: #f6e1c5;
+}
+.rounded {
+    border-radius: 0.25rem !important;
+}
+.p-5 {
+    padding: 3rem !important;
+}
+.ms-auto {
+    margin-left: auto !important;
+}
+@media (min-width: 992px)
+.product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+}
+
+.d-flex {
+    display: flex !important;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+{
+    box-sizing: border-box;
+}
