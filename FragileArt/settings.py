@@ -61,7 +61,9 @@ INSTALLED_APPS = [
     'users',
     'storages',
     'about',
-    'dogs',
+    'products',
+    
+    
 
     # additionals
 
