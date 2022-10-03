@@ -1,4 +1,6 @@
 from django.db import models
+import jsonfield
+
 
 class Category(models.Model):
 
@@ -24,6 +26,8 @@ class Product(models.Model):
     sale_type = models.CharField(max_length=20)
     image = models.ImageField(null=True, blank=True)
     audio = models.FileField(null=True, blank=True, upload_to='media/')
+    client1 = models.TextField(null=True)
+
     
 
     def __str__(self):

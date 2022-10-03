@@ -8,6 +8,7 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'image',
         'client',
+        'client1',
     )
 
 
