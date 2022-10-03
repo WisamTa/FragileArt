@@ -60,9 +60,12 @@ INSTALLED_APPS = [
     'checkout',
     'users',
     'storages',
-    'about',
     'products',
-    
+    'Bootstrap_Template',
+    'blog',
+
+
+
     
 
     # additionals
