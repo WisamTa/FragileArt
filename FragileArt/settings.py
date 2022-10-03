@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     'products',
     'Bootstrap_Template',
     'blog',
+    'import_export',
+
 
 
 

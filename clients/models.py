@@ -12,3 +12,9 @@ class Client(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class StudentData(models.Model):
+   name=models.CharField(max_length=100)
+   standard=models.CharField(max_length=100)
+   section=models.CharField(max_length=100)
