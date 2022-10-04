@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -38,6 +39,7 @@ ALLOWED_HOSTS = ['','localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth', #Needed for Allauth, do not remove!
     'django.contrib.contenttypes',
@@ -64,6 +66,7 @@ INSTALLED_APPS = [
     'Bootstrap_Template',
     'blog',
     'import_export',
+    'dashboard',
 
 
 
